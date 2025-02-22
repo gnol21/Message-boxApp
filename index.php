@@ -60,7 +60,7 @@
 $(document).ready(function () {
     function loadMessages() {
         $.ajax({
-            url: "messages.php",
+            url: "https://givethanksgrocers.com/msg/messages.php",
             method: "GET",
             success: function (data) {
                 $("#messages").html(data);
