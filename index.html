@@ -78,7 +78,7 @@ $(document).ready(function () {
         let subject = $("#subject").val();
         let details = $("#details").val();
 
-        $.post("messages.php", { subject: subject, details: details }, function () {
+        $.post("https://givethanksgrocers.com/msg/messages.php", { subject: subject, details: details }, function () {
             $("#subject").val("");
             $("#details").val("");
             loadMessages();
