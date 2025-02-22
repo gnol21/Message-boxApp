@@ -74,7 +74,7 @@
 $(document).ready(function () {
     function loadMessages() {
         $.ajax({
-            url: "messages.php",
+            url: "https://givethanksgrocers.com/msg/messages.php",
             method: "GET",
             success: function (data) {
                 $("#messages").html(data);
@@ -98,7 +98,7 @@ $(document).ready(function () {
         $("button").prop("disabled", true);
 
         $.ajax({
-            url: "messages.php",
+            url: "https://givethanksgrocers.com/msg/messages.php",
             type: "POST",
             data: formData,
             processData: false,
